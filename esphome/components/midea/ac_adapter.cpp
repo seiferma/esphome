@@ -1,4 +1,4 @@
-#if (defined(USE_ARDUINO) && !defined(USE_RP2) && !defined(USE_LIBRETINY)) || defined(USE_ESP_IDF)
+#if (defined(USE_ARDUINO) && !defined(USE_RP2)) || defined(USE_ESP_IDF)
 
 #include "esphome/core/log.h"
 #include "ac_adapter.h"

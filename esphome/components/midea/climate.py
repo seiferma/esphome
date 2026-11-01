@@ -27,6 +27,10 @@ from esphome.const import (
     ICON_WATER_PERCENT,
     PLATFORM_ESP32,
     PLATFORM_ESP8266,
+    PLATFORM_BK72XX,
+    PLATFORM_LIBRETINY_OLDSTYLE,
+    PLATFORM_LN882X,
+    PLATFORM_RTL87XX,
     STATE_CLASS_MEASUREMENT,
     UNIT_CELSIUS,
     UNIT_PERCENT,
@@ -138,6 +142,10 @@ CONFIG_SCHEMA = cv.All(
         [
             PLATFORM_ESP32,
             PLATFORM_ESP8266,
+            PLATFORM_BK72XX,
+            PLATFORM_LIBRETINY_OLDSTYLE,
+            PLATFORM_LN882X,
+            PLATFORM_RTL87XX,
         ]
     ),
 )
@@ -227,5 +235,5 @@ async def to_code(config):
     cg.add_library(
         name="MideaUART",
         version=None,
-        repository="https://github.com/dudanov/MideaUART.git#eeea6c3e9b4474f067054592b435be1c4e466815",
+        repository="https://github.com/seiferma/MideaUART.git#3371a188232abb369ef06559a67194e1fb1537dd",
     )
